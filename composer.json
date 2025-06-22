@@ -1,0 +1,41 @@
+{
+    "name": "sapphire/mapper",
+    "description": "Mapper library written in PHP for AWS DynamoDB",
+    "keywords": [
+        "DynamoDB",
+        "ODM",
+        "PHP",
+        "aws"
+    ],
+    "homepage": "https://github.com/sapphire-odm/mapper",
+    "type": "library",
+    "version": "dev-0.0.1",
+    "require-dev": {
+        "pestphp/pest": "^3.8",
+        "symfony/var-dumper": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sapphire\\Mapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.3"
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "test:unit": "./vendor/bin/pest tests/Unit",
+        "test:feature": "./vendor/bin/pest tests/Feature"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
