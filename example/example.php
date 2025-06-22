@@ -34,7 +34,7 @@ class TranslatedDescription
     }
 }
 
-#[DynamoObject("products")]
+#[DynamoObject(tableName: "products")]
 class Product extends BaseModel
 {
     #[DynamoField(type: DynamoType::STRING)]
